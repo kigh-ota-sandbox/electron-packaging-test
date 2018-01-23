@@ -1,0 +1,25 @@
+{
+  "name": "electron-packaging-test",
+  "version": "0.1.0-SNAPSHOT",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager:pack": "electron-packager . --overwrite",
+    "packager:pack-asar": "electron-packager . --overwrite --asar",
+    "packager:pack-all": "electron-packager . --all --overwrite",
+    "rebuild": "electron-rebuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "~1.7.11",
+    "electron-packager": "^10.1.1",
+    "electron-rebuild": "^1.7.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "sqlite3": "^3.1.13"
+  }
+}
